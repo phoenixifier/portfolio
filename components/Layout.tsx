@@ -13,7 +13,10 @@ const sora = Sora({
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
-    <div className={`page`}>
+    <div
+      className={`page bg-site bg-cover bg-no-repeat text-white ${sora.variable}
+    relative font-sora`}
+    >
       <TopLeftImg />
       <Nav />
       <Header />
